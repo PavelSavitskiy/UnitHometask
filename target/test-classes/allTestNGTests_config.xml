@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Calculator" verbose="1" parallel = "classes" thread-count="1">
+    <test name="Calculator">
+        <groups >
+            <dependencies>
+                <group name="testNgDouble" depends-on="testNGLong"/>
+            </dependencies>
+        </groups>
+        <classes>
+            <class name= "com.epam.cdp.kzta2017.testng.SumDoubleTest"/>
+            <class name= "com.epam.cdp.kzta2017.testng.DivDoubleTest"/>
+            <class name= "com.epam.cdp.kzta2017.testng.SumLongTest"/>
+            <class name= "com.epam.cdp.kzta2017.testng.SubLongTest"/>
+            <class name= "com.epam.cdp.kzta2017.testng.SubDoubleTest"/>
+            <class name= "com.epam.cdp.kzta2017.testng.MultDoubleTest"/>
+            <class name= "com.epam.cdp.kzta2017.testng.MultLongTest"/>
+            <class name= "com.epam.cdp.kzta2017.testng.DivLongTest"/>
+
+        </classes>
+    </test>
+</suite>
